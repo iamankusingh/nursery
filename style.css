@@ -1,0 +1,159 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"); */
+:root {
+  /* variables */
+  --white: #fff;
+  --black: #000;
+  --lGreen: rgb(114, 226, 179);
+  --dGreen: #0a6847;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--black);
+    background: var(--lGreen);
+  }
+
+  section {
+    background: var(--lGreen);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: var(--white);
+    background: var(--dGreen);
+  }
+
+  section {
+    background: var(--dGreen);
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+  -ms-overflow-style: none; /*IE and Edge*/
+  scrollbar-width: none; /*Firefox*/
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  text-align: center;
+  width: 100vw;
+}
+
+/* Navigation bar */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+}
+
+nav ul {
+  display: flex;
+  gap: 5px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li:hover {
+  background: rgb(250, 93, 93);
+  border-radius: 5px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffcb2f;
+  font-weight: bold;
+  padding: 4px 6px;
+}
+
+/* Main */
+main {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  z-index: -1;
+  position: relative;
+}
+
+main img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -5;
+}
+
+main #hill1 {
+  top: -10%;
+}
+
+/* section */
+section {
+  min-height: 100vh;
+  z-index: 5;
+}
+
+section h2 {
+  padding-top: 2rem;
+}
+
+section .sec-hero {
+}
+
+section img {
+  width: 50vw;
+  height: auto;
+  border-radius: 20px;
+}
+
+section p {
+}
+
+/* tablets */
+@media (max-width: 1023px) {
+  main {
+  }
+
+  main img {
+  }
+}
+
+/* mobiles */
+@media (max-width: 767px) {
+  nav {
+    display: none;
+  }
+  main {
+  }
+
+  main img {
+  }
+
+  section img {
+  }
+
+  section p {
+  }
+}
