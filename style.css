@@ -119,41 +119,19 @@ section h2 {
   padding-top: 2rem;
 }
 
-section .sec-hero {
-}
-
 section img {
   width: 50vw;
   height: auto;
   border-radius: 20px;
 }
 
-section p {
-}
-
 /* tablets */
 @media (max-width: 1023px) {
-  main {
-  }
-
-  main img {
-  }
 }
 
 /* mobiles */
 @media (max-width: 767px) {
   nav {
     display: none;
-  }
-  main {
-  }
-
-  main img {
-  }
-
-  section img {
-  }
-
-  section p {
   }
 }
